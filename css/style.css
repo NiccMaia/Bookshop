@@ -1,0 +1,51 @@
+:root {
+    --twilight-navy: #4d516d;
+    --dusty-rose: #a8868c;
+    --lavender-mist: #b5a4b4;
+    --almond-blush: #d3bcb6;
+    --neutral-gray: #dddad5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--neutral-gray);
+    color: #333;
+}
+
+.sidebar {
+    width: 220px;
+    background: var(--lavender-mist);
+    color: white;
+    border-right: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--almond-blush);
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.highlight .book-title {
+    color: var(--twilight-navy);
+    font-weight: 700;
+}
+
+.book-description {
+    font-size: 0.95rem;
+    color: #555;
+}

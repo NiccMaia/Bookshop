@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bookavy - Home</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font (opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="d-flex min-vh-100">
+
+    <!-- Sidebar -->
+    <aside class="sidebar d-flex flex-column p-4">
+        <h2 class="logo mb-5">📚 Bookavy</h2>
+        <nav class="nav flex-column">
+            <a href="#" class="nav-link">👤 Account</a>
+            <a href="#" class="nav-link">🔔 Notifications</a>
+            <a href="#" class="nav-link">📦 My Orders</a>
+            <a href="#" class="nav-link">❤️ Favorites</a>
+            <a href="#" class="nav-link">⚙️ Settings</a>
+        </nav>
+        <div class="mt-auto social-icons">
+            <a href="#">🌐</a>
+            <a href="#">🐦</a>
+            <a href="#">📘</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1 p-5 bg-light">
+
+        <!-- Topbar -->
+        <header class="d-flex justify-content-between align-items-center mb-5">
+            <form class="d-flex w-50">
+                <input type="text" class="form-control me-2" placeholder="What do you want to read?">
+                <button class="btn btn-primary">Search</button>
+            </form>
+            <nav>
+                <a href="#" class="me-4 text-decoration-none">Shop</a>
+                <a href="#" class="me-4 text-decoration-none">Blog</a>
+                <a href="#" class="me-4 text-decoration-none">About Us</a>
+                <a href="#" class="text-decoration-none">🛒 Basket</a>
+            </nav>
+        </header>
+
+        <!-- Highlight Book -->
+        <section class="highlight d-flex align-items-start">
+            <div class="book-info pe-5">
+                <h1 class="book-title">The Little Prince</h1>
+                <p class="text-muted mb-2">by Antoine de Saint-Exupéry</p>
+                <div class="tags mb-3">
+                    <span class="badge bg-secondary me-2">Philosophy</span>
+                    <span class="badge bg-secondary me-2">Fairytale</span>
+                    <span class="badge bg-secondary">From 10 to 100 y.o.</span>
+                </div>
+                <p class="book-description">
+                    A wise fairytale that simply and soulfully speaks about the most important things:
+                    about friendship and love, duty and loyalty, beauty and evil. A story for adults and kids alike.
+                </p>
+                <div class="mt-3">
+                    <button class="btn btn-outline-dark me-2">Paperback - $10.99</button>
+                    <button class="btn btn-primary">E-book - $4.99</button>
+                </div>
+            </div>
+            <div class="book-cover">
+                <img src="assets/img/little-prince.jpg" alt="The Little Prince" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
+            </div>
+        </section>
+
+    </main>
+</div>
+</body>
+</html>
