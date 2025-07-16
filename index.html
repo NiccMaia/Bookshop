@@ -19,21 +19,36 @@
 <div class="d-flex min-vh-100">
 
     <!-- Sidebar -->
-    <aside class="sidebar d-flex flex-column p-4">
-        <h2 class="logo mb-5">📚 Bookavy</h2>
-        <nav class="nav flex-column">
-            <a href="#" class="nav-link">👤 Account</a>
-            <a href="#" class="nav-link">🔔 Notifications</a>
-            <a href="#" class="nav-link">📦 My Orders</a>
-            <a href="#" class="nav-link">❤️ Favorites</a>
-            <a href="#" class="nav-link">⚙️ Settings</a>
-        </nav>
-        <div class="mt-auto social-icons">
-            <a href="#">🌐</a>
-            <a href="#">🐦</a>
-            <a href="#">📘</a>
+    <aside class="d-flex flex-column justify-content-between p-4 shadow" style="width: 240px; height: 100vh; background-color: #4d516d; color: #fff; border-radius: 1rem 0 0 1rem;">
+
+        <!-- Logo -->
+        <div>
+            <h4 class="fw-bold mb-5 d-flex align-items-center">
+                <i class="bi bi-book-fill me-2" style="font-size: 1.5rem;"></i> Bookavy
+            </h4>
+
+            <!-- Nome do usuário -->
+            <p class="mb-4 fw-semibold">Usuario</p>
+
+            <!-- Menu -->
+            <ul class="nav flex-column gap-3">
+                <li><a href="#" class="nav-link text-white"><i class="bi bi-person me-2"></i> Conta</a></li>
+                <li><a href="#" class="nav-link text-white"><i class="bi bi-bell me-2"></i> Notificações</a></li>
+                <li><a href="#" class="nav-link text-white"><i class="bi bi-box me-2"></i> Meus Pedidos</a></li>
+                <li><a href="#" class="nav-link text-white"><i class="bi bi-star me-2"></i> Favoritos</a></li>
+                <li><a href="#" class="nav-link text-white"><i class="bi bi-gear me-2"></i> Configurações</a></li>
+            </ul>
         </div>
+
+        <!-- Redes sociais -->
+        <div class="d-flex justify-content-around">
+            <a href="#" class="text-white fs-5"><i class="bi bi-play-circle-fill"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-circle"></i></a>
+        </div>
+
     </aside>
+
 
     <!-- Main Content -->
     <main class="flex-grow-1 p-5 bg-light">
