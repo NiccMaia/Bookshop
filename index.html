@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Bookavy - Home</title>
 
-    <!-- Bootstrap Icons  5 CDN -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Font (opcional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="d-flex min-vh-100">
 
     <!-- Sidebar -->
-    <aside class="d-flex flex-column justify-content-between p-4 shadow" style="width: 240px; height: 100vh; background-color: #4d516d; color: #fff; border-radius: 1rem 0 0 1rem;">
-
+    <aside class="d-flex flex-column justify-content-between p-4 shadow sidebar">
         <!-- Logo -->
         <div>
-            <h4 class="fw-bold mb-5 d-flex align-items-center">
-                <i class="bi bi-book-fill me-2" style="font-size: 1.5rem;"></i> Bookavy
+            <h4 class="fw-bold mb-5 d-flex align-items-center logo">
+                <i class="bi bi-book-fill me-2"></i> Bookavy
             </h4>
 
             <!-- Nome do usuário -->
@@ -41,55 +40,57 @@
         </div>
 
         <!-- Redes sociais -->
-        <div class="d-flex justify-content-around">
-            <a href="#" class="text-white fs-5"><i class="bi bi-play-circle-fill"></i></a>
-            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white fs-5"><i class="bi bi-circle"></i></a>
+        <div class="d-flex justify-content-around social-icons">
+            <a href="#" class="fs-5"><i class="bi bi-play-circle-fill"></i></a>
+            <a href="#" class="fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5"><i class="bi bi-circle"></i></a>
         </div>
-
     </aside>
 
-
     <!-- Main Content -->
-    <main class="flex-grow-1 p-5 bg-light">
+    <main class="flex-grow-1 p-5 content-area">
 
         <!-- Topbar -->
         <header class="d-flex justify-content-between align-items-center mb-5">
             <form class="d-flex w-50">
-                <input type="text" class="form-control me-2" placeholder="What do you want to read?">
-                <button class="btn btn-primary">Search</button>
+                <input type="text" class="form-control me-2" placeholder="O que você quer ler?">
+                <button class="btn btn-primary">Buscar</button>
             </form>
             <nav>
                 <a href="#" class="me-4 text-decoration-none">Shop</a>
                 <a href="#" class="me-4 text-decoration-none">Blog</a>
-                <a href="#" class="me-4 text-decoration-none">About Us</a>
-                <a href="#" class="text-decoration-none">🛒 Basket</a>
+                <a href="#" class="me-4 text-decoration-none">Sobre</a>
+                <a href="#" class="text-decoration-none"><i class="bi bi-cart"></i> Basket</a>
             </nav>
         </header>
 
         <!-- Highlight Book -->
-        <section class="highlight d-flex align-items-start">
-            <div class="book-info pe-5">
-                <h1 class="book-title">The Little Prince</h1>
-                <p class="text-muted mb-2">by Antoine de Saint-Exupéry</p>
-                <div class="tags mb-3">
-                    <span class="badge bg-secondary me-2">Philosophy</span>
-                    <span class="badge bg-secondary me-2">Fairytale</span>
-                    <span class="badge bg-secondary">From 10 to 100 y.o.</span>
+        <div class="book-details px-3">
+            <h2 class="fw-bold text-title mb-2" style="font-size: 1.8rem;">O Pequeno Príncipe</h2>
+            <p class="text-muted mb-3" style="text-transform: capitalize;">Antoine de saint-Exupáry</p>
+
+            <!-- Tags -->
+            <div class="mb-3 d-flex gap-2">
+                <span class="badge rounded-pill tag px-3 py-2">filosofia</span>
+                <span class="badge rounded-pill tag px-3 py-2">conto de fadas</span>
+            </div>
+
+            <!-- Descrição -->
+            <p class="mb-4 book-description">
+                Um conto de fadas <strong>sábio</strong> e <strong>tocante</strong> sobre <strong>amizade</strong>,
+                <strong>amor</strong> e as coisas remanescentes importantes da <strong>vida</strong>.
+            </p>
+
+            <!-- Preço -->
+            <div class="d-flex gap-3">
+                <div class="price-box">
+                    <strong>Papel</strong><br>R$ 39,99
                 </div>
-                <p class="book-description">
-                    A wise fairytale that simply and soulfully speaks about the most important things:
-                    about friendship and love, duty and loyalty, beauty and evil. A story for adults and kids alike.
-                </p>
-                <div class="mt-3">
-                    <button class="btn btn-outline-dark me-2">Paperback - $10.99</button>
-                    <button class="btn btn-primary">E-book - $4.99</button>
+                <div class="price-box">
+                    <strong>E-book</strong><br>R$ 19,99
                 </div>
             </div>
-            <div class="book-cover">
-                <img src="assets/img/little-prince.jpg" alt="The Little Prince" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
-            </div>
-        </section>
+        </div>
 
     </main>
 </div>

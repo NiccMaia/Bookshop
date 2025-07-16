@@ -1,55 +1,73 @@
 :root {
     --twilight-navy: #4d516d;
-    --dusty-rose: #a8868c;
-    --lavender-mist: #b5a4b4;
-    --almond-blush: #d3bcb6;
-    --neutral-gray: #dddad5;
+    --lavender-bg: #f4eff7;
+    --tag-gray: #dddddd;
+    --primary-text: #2a2a53;
+    --box-bg: #ffffff;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--neutral-gray);
-    color: #333;
+    background: var(--lavender-bg);
+    color: var(--primary-text);
 }
 
-.sidebar a.nav-link {
-    font-size: 1rem;
-    transition: 0.2s;
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: var(--twilight-navy);
+    color: white;
+    border-radius: 1rem 0 0 1rem;
 }
-
-.sidebar a.nav-link:hover {
-    color: #4d416d; /* Twilight Navy */
-    font-weight: 600;
-}
-
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.nav-link {
+.sidebar .nav-link {
     color: white;
-    padding: 8px 0;
-    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.2s;
 }
 
-.nav-link:hover {
-    color: var(--almond-blush);
+.sidebar .nav-link:hover {
+    color: #d3bcb6;
+    font-weight: 600;
 }
 
 .social-icons a {
-    margin-right: 10px;
     color: white;
     text-decoration: none;
 }
 
-.highlight .book-title {
-    color: var(--twilight-navy);
-    font-weight: 700;
+.content-area {
+    background: var(--lavender-bg);
+}
+
+.text-title {
+    color: var(--primary-text);
+}
+
+.tag {
+    background-color: var(--tag-gray);
+    color: #222;
+    font-weight: 500;
 }
 
 .book-description {
-    font-size: 0.95rem;
-    color: #555;
+    font-size: 1rem;
+    color: #444;
+    max-width: 440px;
+}
+
+.price-box {
+    background: var(--box-bg);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    min-width: 120px;
+    font-weight: 600;
 }
