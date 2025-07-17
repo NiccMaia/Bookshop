@@ -1,3 +1,4 @@
+
 :root {
     --twilight-navy: #4d516d;
     --lavender-bg: #f4eff7;
@@ -70,4 +71,34 @@ body {
     text-align: center;
     min-width: 120px;
     font-weight: 600;
+}
+
+.search-input {
+    border: 2px solid var(--twilight-navy);
+    border-radius: 999px;
+    padding-left: 2.2rem;
+    background-color: #fff;
+
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--twilight-navy);
+}
+
+
+.nav-link {
+    color: var(--primary-text);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }

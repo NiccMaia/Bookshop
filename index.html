@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,22 +14,17 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <div class="d-flex min-vh-100">
-
     <!-- Sidebar -->
     <aside class="d-flex flex-column justify-content-between p-4 shadow sidebar">
-        <!-- Logo -->
         <div>
             <h4 class="fw-bold mb-5 d-flex align-items-center logo">
                 <i class="bi bi-book-fill me-2"></i> Bookavy
             </h4>
-
-            <!-- Nome do usuário -->
             <p class="mb-4 fw-semibold">Usuario</p>
-
-            <!-- Menu -->
             <ul class="nav flex-column gap-3">
                 <li><a href="#" class="nav-link text-white"><i class="bi bi-person me-2"></i> Conta</a></li>
                 <li><a href="#" class="nav-link text-white"><i class="bi bi-bell me-2"></i> Notificações</a></li>
@@ -38,8 +33,6 @@
                 <li><a href="#" class="nav-link text-white"><i class="bi bi-gear me-2"></i> Configurações</a></li>
             </ul>
         </div>
-
-        <!-- Redes sociais -->
         <div class="d-flex justify-content-around social-icons">
             <a href="#" class="fs-5"><i class="bi bi-play-circle-fill"></i></a>
             <a href="#" class="fs-5"><i class="bi bi-facebook"></i></a>
@@ -47,41 +40,35 @@
         </div>
     </aside>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main class="flex-grow-1 p-5 content-area">
 
         <!-- Topbar -->
         <header class="d-flex justify-content-between align-items-center mb-5">
-            <form class="d-flex w-50">
-                <input type="text" class="form-control me-2" placeholder="O que você quer ler?">
-                <button class="btn btn-primary">Buscar</button>
+            <form class="position-relative d-flex w-50">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" class="form-control search-input" placeholder="O que você quer ler?">
             </form>
             <nav>
-                <a href="#" class="me-4 text-decoration-none">Shop</a>
-                <a href="#" class="me-4 text-decoration-none">Blog</a>
-                <a href="#" class="me-4 text-decoration-none">Sobre</a>
-                <a href="#" class="text-decoration-none"><i class="bi bi-cart"></i> Basket</a>
+                <a href="#" class="me-4 text-decoration-none nav-link">Shop</a>
+                <a href="#" class="me-4 text-decoration-none nav-link">Blog</a>
+                <a href="#" class="me-4 text-decoration-none nav-link">Sobre</a>
+                <a href="#" class="text-decoration-none nav-link"><i class="bi bi-cart"></i> Basket</a>
             </nav>
         </header>
 
-        <!-- Highlight Book -->
+        <!-- Book Highlight -->
         <div class="book-details px-3">
             <h2 class="fw-bold text-title mb-2" style="font-size: 1.8rem;">O Pequeno Príncipe</h2>
-            <p class="text-muted mb-3" style="text-transform: capitalize;">Antoine de saint-Exupáry</p>
-
-            <!-- Tags -->
+            <p class="text-muted mb-3" style="text-transform: capitalize;">Antoine De Saint-Exupáry</p>
             <div class="mb-3 d-flex gap-2">
                 <span class="badge rounded-pill tag px-3 py-2">filosofia</span>
                 <span class="badge rounded-pill tag px-3 py-2">conto de fadas</span>
             </div>
-
-            <!-- Descrição -->
             <p class="mb-4 book-description">
                 Um conto de fadas <strong>sábio</strong> e <strong>tocante</strong> sobre <strong>amizade</strong>,
                 <strong>amor</strong> e as coisas remanescentes importantes da <strong>vida</strong>.
             </p>
-
-            <!-- Preço -->
             <div class="d-flex gap-3">
                 <div class="price-box">
                     <strong>Papel</strong><br>R$ 39,99
@@ -91,7 +78,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 </div>
 </body>
