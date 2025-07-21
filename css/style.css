@@ -1,8 +1,8 @@
 
 :root {
-    --twilight-navy: #4d516d;
+    --twilight-navy: #8d799a;
     --lavender-bg: #f4eff7;
-    --tag-gray: #dddddd;
+    --tag-gray: #e0b8d6;
     --primary-text: #2a2a53;
     --box-bg: #ffffff;
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--lavender-bg);
+    background: linear-gradient(135deg, #fce3e1 0%, #f8e8f2 50%, #d6c7e7 100%);
     color: var(--primary-text);
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .content-area {
-    background: var(--lavender-bg);
+
 }
 
 .text-title {
@@ -101,4 +101,18 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
+}
+.book-cover-box {
+    background: var(--box-bg); /* branco */
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow); /* sombra suave */
+    width: fit-content;
+}
+
+.book-cover {
+    width: 190px; /* ajuste conforme necessário */
+    height: auto;
+    border-radius: 0.5rem; /* arredonda a imagem também */
+    display: block;
 }
