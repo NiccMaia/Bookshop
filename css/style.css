@@ -1,4 +1,3 @@
-
 :root {
     --twilight-navy: #8d799a;
     --lavender-bg: #f4eff7;
@@ -44,7 +43,7 @@ body {
 }
 
 .content-area {
-
+    background: transparent;
 }
 
 .text-title {
@@ -78,7 +77,6 @@ body {
     border-radius: 999px;
     padding-left: 2.2rem;
     background-color: #fff;
-
 }
 
 .search-input::placeholder {
@@ -93,7 +91,6 @@ body {
     color: var(--twilight-navy);
 }
 
-
 .nav-link {
     color: var(--primary-text);
     font-weight: 500;
@@ -102,17 +99,32 @@ body {
 .nav-link:hover {
     text-decoration: underline;
 }
+
 .book-cover-box {
-    background: var(--box-bg); /* branco */
-    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
     padding: 1rem;
-    box-shadow: var(--box-shadow); /* sombra suave */
+    box-shadow:  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
     width: fit-content;
 }
 
 .book-cover {
-    width: 190px; /* ajuste conforme necessário */
-    height: auto;
-    border-radius: 0.5rem; /* arredonda a imagem também */
+    width: 270px;
+    height: 350px;
+    border-radius: 0.5rem;
     display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .price-box {
+        padding: 0.8rem 1.5rem;
+        min-width: 100px;
+    }
+
+    .book-description {
+        font-size: 0.95rem;
+    }
 }
