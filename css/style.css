@@ -226,3 +226,18 @@ body {
     color: var(--primary-text);
     font-size: 1.5rem;
 }
+
+.card-title {
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    object-fit: contain;
+    height: 260px;
+}
